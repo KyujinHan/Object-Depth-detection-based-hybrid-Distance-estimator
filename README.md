@@ -1,6 +1,6 @@
 # Object-Depth-detection-based-hybrid-Distance-estimator
 We use our ODD model. Our purpose is that predict the distance between car based on Deep-Learning.  
-(XGBoost train하는 파일만 넣으면 끝)  
+
 
 # Introduction
 (우리의 실험사진)  
