@@ -1,0 +1,12 @@
+##############Library##############
+# Our environment
+pandas == 1.4.1
+Numpy == 1.22.3
+opencv-python == 4.5.4.58
+torch == 1.7.1+cu110
+torchvision == 0.8.2+cu110
+transformers == 4.17.0
+xgboost == 1.6.1
+scipy == 1.8.0
+scikit-learn == 1.0.2
+
