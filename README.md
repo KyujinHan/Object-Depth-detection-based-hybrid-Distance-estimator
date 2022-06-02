@@ -37,9 +37,22 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 | `LSTM` | 1.2200 | 2.2416 | 0.9522 | |
 
 # Dataset
-- 데이터셋 다운 받고 압축 푸는 경로 알려주기(드라이브 공유)  
-(데이터 전처리하는 그 과정 사진)  
-­- 데이터 만드는 법 적기(and 왜 그렇게 만들었는지 적기)  
+- Download Dataset
+You can download the [KITTI Data(18.72GB)](https://drive.google.com/file/d/1Yv-XkVmYVMIxMsoaX0wRP0uc7AgS9XTq/view?usp=sharing).  
+Then, You unzip the data, and set the path.
+'''
+os.makedirs('./data/image', exist_ok=True)  
+'./datasets/data/image'  
+'''
+
+- Make the reconstructed data
+We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR.
+'''
+
+'''
+
+- Split data
+
   
 # Training 
 - 학습하는 방법 적기  
