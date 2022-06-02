@@ -12,11 +12,12 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 - 모델 설명  
 
 # Performance
-| First Header  | Second Header |
+|  Model  | MAE | RMSE | Accuracy |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |  
-  
+| RandomForest | 0.5057 | 0.8420 | 0.9599 |
+| XGBoost  | 0.2334 | 0.3149 | 0.9867 |  
+| LSTM | 0.9027 | 1.7235 | 0.9807 |  
+
 # Dataset
 - 데이터셋 다운 받고 압축 푸는 경로 알려주기(드라이브 공유)  
 (데이터 전처리하는 그 과정 사진)  
