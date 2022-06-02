@@ -4,7 +4,7 @@ We use our ODD model. Our purpose is that predict the distance between car based
 
 
 # Introduction
-(우리의 실험사진)  
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/98331298/171547569-da221132-a13e-4b5f-8437-59cad290d3b2.gif)  
 ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)  
   
 # Model Architecture
