@@ -34,7 +34,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 | Model | MAE | RMSE | Accuracy | Pre-trained |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 1.3134 | 2.2927 | 0.9492 | |
-| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGB](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
+| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGBoost(Best)](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
 | `LSTM` | 1.2200 | 2.2416 | 0.9522 | [LSTM_612](https://drive.google.com/file/d/1q_u3PL0Ms99f5DI_YEGpB55OIItIMJQ-/view?usp=sharing) |
 ------------
 
