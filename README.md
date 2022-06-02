@@ -16,7 +16,9 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 - 데이터가 들어오면 어떻게 되는지 적기  
 
 # Performance
-- Train data (# number of Data: 21,616)   
+
+
+- **Train data (# number of Data: 21,616)**  
 
 | Model | MAE | RMSE | Accuracy |
 | ------------- | ------------- | ------------- | ------------- |
@@ -24,7 +26,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 | `XGBoost` | 0.2334 | 0.3149 | 0.9867 |  
 | `LSTM` | 0.9027 | 1.7235 | 0.9657 |  
   
-- Test data (# number of Data: 2,703)
+- **Test data (# number of Data: 2,703)**  
 
 | Model | MAE | RMSE | Accuracy | Pre-trained |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
