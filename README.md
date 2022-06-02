@@ -20,6 +20,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 # Performance
 **We use [KITTI](http://www.cvlibs.net/datasets/kitti/) datasets. But we did not use the original data, We reconstructed the data to suit our purpose.**
 
+------------
 - **Train data (# number of Data: 21,616)**  
 
 | Model | MAE | RMSE | Accuracy |
@@ -35,6 +36,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 | `RandomForest` | 1.3134 | 2.2927 | 0.9492 | |
 | `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGB](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
 | `LSTM` | 1.2200 | 2.2416 | 0.9522 | [LSTM_612](https://drive.google.com/file/d/1q_u3PL0Ms99f5DI_YEGpB55OIItIMJQ-/view?usp=sharing) |
+------------
 
 # Dataset
 - Download Dataset
