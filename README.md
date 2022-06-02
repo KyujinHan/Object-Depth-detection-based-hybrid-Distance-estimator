@@ -76,7 +76,7 @@ Apply the code below in order.
 ```
   
 # Training 
-- 학습하는 방법 적기  
+Look at the ODD folder, there are so many method, for example, LSTM, RandomForest, XGBoost.
 
 # Testing
 - Opencv 활용해서 실행하는 법 적기  
