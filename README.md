@@ -71,7 +71,9 @@ Apply the code below in order.
 ```
  
 4) Split data
-
+```
+'./datasets/train_test_split.py'
+```
   
 # Training 
 - 학습하는 방법 적기  
