@@ -39,17 +39,17 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 # Dataset
 - Download Dataset
 You can download the [KITTI Data(18.72GB)](https://drive.google.com/file/d/1Yv-XkVmYVMIxMsoaX0wRP0uc7AgS9XTq/view?usp=sharing).  
-Then, You unzip the data, and set the path.
-'''
+Then, You unzip the data, and set the path.   
+```
 os.makedirs('./data/image', exist_ok=True)  
 './datasets/data/image'  
-'''
+```
 
 - Make the reconstructed data
-We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR.
-'''
+We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR.  
+```
 
-'''
+```
 
 - Split data
 
