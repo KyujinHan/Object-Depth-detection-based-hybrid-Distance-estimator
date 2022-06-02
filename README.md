@@ -62,8 +62,10 @@ data
    
 - Make Our Datasets
 We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR.   
+Apply the code below in order.  
 ```
-kitti_
+1) kitti_detr_dataset_iou.py
+2) kitti_glpdepth_dataset_iou.py
 ```
  
 - Split data
