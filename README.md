@@ -79,7 +79,11 @@ Apply the code below in order.
 Look at the 'odd' folder, there are so many method, for example, LSTM, RandomForest, XGBoost.
 
 # Testing
-- Opencv 활용해서 실행하는 법 적기  
+Use the file.
+```
+LSTM: ODD_application_LSTM.py
+XGBoost: ODD_application.py
+```
 
 # References
 - 논문이랑, pre-trained 모델 정보들   
