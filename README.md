@@ -33,22 +33,32 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 | Model | MAE | RMSE | Accuracy | Pre-trained |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 1.3134 | 2.2927 | 0.9492 | |
-| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | |
-| `LSTM` | 1.2200 | 2.2416 | 0.9522 | |
+| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGB](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
+| `LSTM` | 1.2200 | 2.2416 | 0.9522 | [LSTM_612](https://drive.google.com/file/d/1q_u3PL0Ms99f5DI_YEGpB55OIItIMJQ-/view?usp=sharing) |
 
 # Dataset
 - Download Dataset
-You can download the [KITTI Data(18.72GB)](https://drive.google.com/file/d/1Yv-XkVmYVMIxMsoaX0wRP0uc7AgS9XTq/view?usp=sharing).  
+You can download the [KITTI Data(11.5GB)](https://drive.google.com/file/d/1MhDts48HWxIWPC7ZXLOMPqU2Mnt3NVmI/view?usp=sharing).  
 Then, You unzip the data, and set the path.   
 ```
-os.makedirs('./data/image', exist_ok=True)  
-'./datasets/data/image'  
+os.makedirs('./data/', exist_ok=True)  
+'./datasets/data'  
 ```
 
 - Make the reconstructed data
 We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR.  
+In the unzip folder, there is 'image' folder. So you move the folder into the data folder.   
 ```
-
+data
+├── image                    
+│   ├── test
+|       ├── 000000.png            
+│       ├── 000001.png
+│       └── ...
+│   ├── train             
+│       ├── 000000.png             
+│       ├── 000001.png            
+│       └── ...                 
 ```
 
 - Split data
