@@ -45,8 +45,7 @@ os.makedirs('./data/', exist_ok=True)
 './datasets/data'  
 ```
 
-- Make the reconstructed data
-We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR.  
+- Unzip Dataset
 In the unzip folder, there is 'image' folder. So you move the folder into the data folder.   
 ```
 data
@@ -60,7 +59,13 @@ data
 │       ├── 000001.png            
 │       └── ...                 
 ```
-
+   
+- Make Our Datasets
+We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR.   
+```
+kitti_
+```
+ 
 - Split data
 
   
