@@ -8,7 +8,7 @@ We use our ODD model. Our purpose is that predict the distance between car based
 ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)  
   
 # Model Architecture
-![image](https://user-images.githubusercontent.com/98331298/171552228-5ceeafb2-cc65-47b5-be68-55bde805638f.png)
+<img width="620" alt="architecture" src="https://user-images.githubusercontent.com/98331298/171553688-aee2e42a-9699-485a-8257-24f32b100ebe.png">
 - 어떤 모델이 사용되었고, 무엇이 있는지 적기   
 
 # Model Proceess
