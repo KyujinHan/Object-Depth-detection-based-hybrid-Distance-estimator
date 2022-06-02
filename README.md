@@ -11,7 +11,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 <img width="620" alt="architecture" src="https://user-images.githubusercontent.com/98331298/171553688-aee2e42a-9699-485a-8257-24f32b100ebe.png">
 - 어떤 모델이 사용되었고, 무엇이 있는지 적기   
 
-# Model Proceess
+# Model Process
 ![ODD_process](https://user-images.githubusercontent.com/98331298/171548443-b4441f3e-7ac0-4108-913d-bd4e9db84fe3.jpg)  
 - 데이터가 들어오면 어떻게 되는지 적기  
 
