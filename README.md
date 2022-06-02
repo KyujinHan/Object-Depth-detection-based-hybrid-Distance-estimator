@@ -39,7 +39,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 ------------
 
 # Dataset
-- Download Dataset
+1) Download Dataset
 You can download the [KITTI Data(11.5GB)](https://drive.google.com/file/d/1MhDts48HWxIWPC7ZXLOMPqU2Mnt3NVmI/view?usp=sharing).  
 Then, You unzip the data, and set the path.   
 ```
@@ -47,7 +47,7 @@ os.makedirs('./data/', exist_ok=True)
 './datasets/data'  
 ```
 
-- Unzip Dataset
+2) Unzip Dataset
 In the unzip folder, there is 'image' folder. So you move the folder into the data folder.   
 ```
 data
@@ -62,7 +62,7 @@ data
 │       └── ...                 
 ```
    
-- Make Our Datasets
+3) Make Our Datasets
 We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR.   
 Apply the code below in order.  
 ```
@@ -70,7 +70,7 @@ Apply the code below in order.
 2) kitti_glpdepth_dataset_iou.py
 ```
  
-- Split data
+4) Split data
 
   
 # Training 
