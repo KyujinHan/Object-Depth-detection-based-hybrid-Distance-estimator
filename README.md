@@ -16,7 +16,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 - 데이터가 들어오면 어떻게 되는지 적기  
 
 # Performance
-**We use [KITTI](http://www.cvlibs.net/datasets/kitti/) datasets. But we use not the original data, We reconstructed the data to suit our purpose.**
+**We use [KITTI](http://www.cvlibs.net/datasets/kitti/) datasets. But we did not use the original data, We reconstructed the data to suit our purpose.**
 
 - **Train data (# number of Data: 21,616)**  
 
