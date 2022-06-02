@@ -8,12 +8,12 @@ We use our ODD model. Our purpose is that predict the distance between car based
 ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)  
   
 # Model Architecture
-  
-- 
+![image](https://user-images.githubusercontent.com/98331298/171551333-ce5c64f1-f1aa-45f7-869c-45194d830f47.png)
+- 어떤 모델이 사용되었고, 무엇이 있는지 적기   
 
 # Model Proceess
 ![ODD_process](https://user-images.githubusercontent.com/98331298/171548443-b4441f3e-7ac0-4108-913d-bd4e9db84fe3.jpg)  
-- 모델 설명  
+- 데이터가 들어오면 어떻게 되는지 적기  
 
 # Performance
 - Train data (# number of Data: 21,616)   
@@ -42,5 +42,8 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 
 # Testing
 - Opencv 활용해서 실행하는 법 적기  
+
+# References
+- 논문이랑, pre-trained 모델 정보들   
 
  
