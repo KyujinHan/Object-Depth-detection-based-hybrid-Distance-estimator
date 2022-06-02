@@ -13,6 +13,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 
 # Performance
 - Train data  
+
 | Model | MAE | RMSE | Accuracy |
 | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 0.5057 | 0.8420 | 0.9599 |
