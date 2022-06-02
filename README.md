@@ -48,7 +48,7 @@ os.makedirs('./data/', exist_ok=True)
 ```
 
 2) Unzip Dataset
-In the unzip folder, there is 'image' folder. So you move the folder into the data folder.   
+In the unzip folder, there is 'image' folder. So you move the folder into the 'data' folder.   
 ```
 data
 ├── image                    
@@ -76,7 +76,7 @@ Apply the code below in order.
 ```
   
 # Training 
-Look at the ODD folder, there are so many method, for example, LSTM, RandomForest, XGBoost.
+Look at the 'odd' folder, there are so many method, for example, LSTM, RandomForest, XGBoost.
 
 # Testing
 - Opencv 활용해서 실행하는 법 적기  
