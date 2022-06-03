@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jun  1 06:08:23 2022
-
 @author: ODD team
+
+# ODD process function
 """
 
 import pandas as pd
@@ -81,6 +82,15 @@ class ODD:
             
     #  data preprocessing part.
     def data_preprocessing(self, prediction):
+        '''
+        전처리
+        preprocessing
+        bbox 비교해서 70% 이상 겹친다면 그 뒤에 있는 영역을 지우고,
+        if our image are overlap over 70% we remove futher object 
+        만약 아니라면, 겹친 부분을 제외한 후, 다시 depth를 계산해서 값 출력
+        if not, exclude overlapped and calculate depth again.
+        '''
+        
         self.data.index = [i for i in range(len(self.data))]
         
         xmin_list = [] ; ymin_list = [] ; xmax_list = [] ; ymax_list = []

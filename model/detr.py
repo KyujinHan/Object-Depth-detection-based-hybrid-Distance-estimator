@@ -3,6 +3,7 @@
 Created on Tue Apr 5 03:56:54 2022
 @author: ODD_Team
 
+references: https://github.com/facebookresearch/detr 
 """
 import torch
 from torchvision import transforms

@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Apr  9 04:08:02 2022
-
 @author: Admin_with ODD Team
+
+references: https://github.com/vinvino02/GLPDepth 
 """
 
 import torch

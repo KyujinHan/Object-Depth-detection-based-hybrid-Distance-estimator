@@ -3,7 +3,9 @@
 Created on Mon May 23 04:55:50 2022
 
 @author: ODD_team
-@based on LSTM model
+@based on LSTM model 
+
+# Make ourself
 """
 
 import torch
@@ -37,7 +39,7 @@ class Zloc_Estimaotor(nn.Module):
         output = self.fc(out[:,-1])
         return output
     
-#calss of LSTM
+#class of LSTM
 class LSTM():
     #base-line of zloc model
     def __init__(self, path):
@@ -49,7 +51,7 @@ class LSTM():
         self.model.load_state_dict(torch.load(path))
         self.device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu') # 'cuda'
         
-        # predict the zlocation and return it
+    # predict the zlocation and return it
     def predict(self, data):
         self.zloc = self.model(data.reshape(-1,1, self.input_dim).to(self.device))
         return self.zloc.cpu()
