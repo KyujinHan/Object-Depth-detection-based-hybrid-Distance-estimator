@@ -107,6 +107,8 @@ for k in tqdm(range(len(train_image_list))): # 7481개의 데이터
         continue
     
     else:
+        
+        # BBOX intersection 계산하는 방법(Distance calculate)
         for (real_xmin, real_ymin, real_xmax, real_ymax) in coordinates.tolist():
             real_coord_array = np.repeat(np.array((real_xmin, real_ymin, real_xmax, real_ymax)).reshape(1,4), count, axis=0)
             
