@@ -1,6 +1,7 @@
 # Object-Depth-detection-based-hybrid-Distance-estimator
 We use our ODD model. Our purpose is that predict the distance between car based on Deep-Learning.  
--- It's not completed yet, and we're going to add speed calculation and voice later. --  
+-- It's not completed yet, and we're going to add speed calculation and voice later. --   
+-- We will update the github readme. --  
 
 
 # Introduction
@@ -85,6 +86,9 @@ XGBoost: ODD_application.py
 ```
 
 # References
-- 논문이랑, pre-trained 모델 정보들   
+[DETR](https://github.com/facebookresearch/detr)   
+[GLP-depth](https://github.com/vinvino02/GLPDepth)   
+[huggingface-transformers](https://github.com/huggingface/transformers)   
+[KITTI dataset](http://www.cvlibs.net/datasets/kitti/)  
 
  
