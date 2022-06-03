@@ -85,6 +85,9 @@ XGBoost: ODD_application.py
 ```
 
 # References
-- 논문이랑, pre-trained 모델 정보들   
+[DETR](https://github.com/facebookresearch/detr)   
+[GLP-depth](https://github.com/vinvino02/GLPDepth)   
+[huggingface-transformers](https://github.com/huggingface/transformers)   
+[KITTI dataset](http://www.cvlibs.net/datasets/kitti/)  
 
  
