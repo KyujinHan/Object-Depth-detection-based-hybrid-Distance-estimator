@@ -11,10 +11,15 @@ import pandas as pd
 import numpy as np
 import torch
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
+
+
 # get data set
 class CustomDataset():
     def __init__(self, data, variable, scaler=False, train=False, onehot=True):
+        
         self.df=data
+        
+        # One-hot
         if onehot==True:
             self.inp = self.df[[col for col in self.df[variable].columns if col not in ['Misc', 'bicycle', 'car', 'people', 'train', 'truck']]].values
             self.onehot = self.df[[col for col in self.df[variable].columns if col in ['Misc', 'bicycle', 'car', 'people', 'train', 'truck']]].values
@@ -28,6 +33,7 @@ class CustomDataset():
         else: 
             self.scaler = train
         
+        # Scaler
         if scaler==True:
             self.inp = self.scaler.transform(self.inp)
             if onehot==True:

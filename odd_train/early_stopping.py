@@ -3,7 +3,7 @@
 Created on Sun May  1 03:17:10 2022
 
 @author: Admin
-https://quokkas.tistory.com/37
+references: https://quokkas.tistory.com/37
 """
 import numpy as np
 import torch
