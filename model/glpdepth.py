@@ -2,12 +2,13 @@
 """
 Created on Sat Apr  9 04:08:02 2022
 
-@author: Admin
+@author: Admin_with ODD Team
 """
 
 import torch
 from transformers import GLPNForDepthEstimation, GLPNFeatureExtractor
 
+# class of GLP-depth
 class GLP():
     def __init__(self, pretrained):
         self.feature_extractor =  GLPNFeatureExtractor.from_pretrained(pretrained) # vinvino02/glpn-kitti, vinvino02/glpn-nyu2
@@ -16,7 +17,8 @@ class GLP():
         self.model.eval()
         
         self.device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu') # 'cuda'
-        
+
+# predict the depth of image        
     def predict(self, img, img_shape):
         with torch.no_grad(): # Depth map
             pixel_values = self.feature_extractor(img, return_tensors="pt").pixel_values.to(self.device)

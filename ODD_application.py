@@ -1,3 +1,10 @@
+"""
+    @ Author_odd team
+    @ this program is design by ODD_team.
+    @ using open-cv, we will predict distance & and give the warning message.
+    @ If we have the chance imporve it by application, we will use GPS API to estimate accurate system
+"""
+
 import os
 import pandas as pd
 import numpy as np
@@ -161,28 +168,28 @@ if cap.isOpened():
             
             
             '''
-            Step2) GLP_Depth 적용
+            Step2) apply GLP_Depth 
             '''
             # Make depth map
             prediction = GLPdepth.predict(pil_image, img_shape)
             
             
             '''
-            Step3) 입력 및 z-model 적용
+            Step3) apply z-loc estimator
             '''
             data = ODD_process.make_dataset_from_pretrained_model(scores, boxes, prediction, DETR) # dataset 만들기
             
-            # input text & draw bbox
+            # input text and draw bbox
             distance = []
             for k in data.index:
                 x_range = np.arange(int(data.iloc[k,0]), int(data.iloc[k,2])+1) # xmax~xmin 
                 line_range = np.arange(500, 742+1)
                 
-                # 겹칠 때 판단하기
+                # if images are closed and mixed, apply it
                 if len(np.intersect1d(x_range, line_range)) >= 10: 
                     classes = data.iloc[k,-2] # class info
                     '''
-                    Z-model 적용
+                    Z-model > in this case we will use xgboost model
                     '''
                     #Misc, bicycle, car, person, train, truck
                     if classes == 'Misc':
@@ -257,7 +264,7 @@ if cap.isOpened():
             break
         
           
-        
+        #error message
 else:
     print('파일을 열 수 없습니다')
     #warn1.speak()
@@ -265,6 +272,6 @@ else:
     
 # OpenCV 중지
 cap.release()
-#out.release() # 이것도 실험 때는 제거
+#out.release() # 이것도 실험 때는 제거 -> it helps release the memory in your enviroment.
 cv2.destroyAllWindows()   
 

@@ -3,6 +3,7 @@
 Created on Sat Apr  9 03:55:25 2022
 
 @author: ODD Team
+Using DETR we extract overlapped object and exclude that object.
 # DETR을 이용해서 실제 데이터 안에서 같은 객체로 DETR이 인식하는 bounding box를 찾아 뽑아내기
 """
 
@@ -63,6 +64,9 @@ DETR.model.to(device)
 # 4. Algorithm (Make data)
 # 좌표값의 제곱합(SSE)을 이용
 '''
+there is too many object when we extract bounding box, there is too many overlapped object.
+So if there is another exception, we calculate IOU and extract it.
+
 알고리즘의 목적: 실제 데이터에서 나타나는 bounding box보다 DETR이 예측하는 BOXES가 더 많아서, detr이 예측한 boxes중 어떤 것이 실제 데이터와 맞는지 비교해서 그 데이터의 zloc를 이용할 수 있게 하는 데이터 전처리 과정
 Method: bounding box간의 좌표 제곱 합을 비교해서 가장 가깝다면 같은 객체를 인식한 bbox라고 판단한다. 단 하나의 객체를 DETR의 여러 BBOX가 같다고 판단했다면, 중복이기 때문에 그 데이터는 사용하지 않는다.
 '''

@@ -3,14 +3,15 @@
 Created on Mon Apr 11 10:24:04 2022
 
 @author: ODD
-# 출처: https://velog.io/@devlee247/Pytorch%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B2%98%EB%A6%AC-Dataset-Dataloader
+@preparing data set
+# reference: https://velog.io/@devlee247/Pytorch%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B2%98%EB%A6%AC-Dataset-Dataloader
 """
 
 import pandas as pd
 import numpy as np
 import torch
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
-
+# get data set
 class CustomDataset():
     def __init__(self, data, variable, scaler=False, train=False, onehot=True):
         self.df=data
@@ -35,10 +36,10 @@ class CustomDataset():
                 
 	
     def __len__(self):
-		# 가지고 있는 데이터셋의 길이를 반환한다.
+		# return the length of dataset
         return len(self.inp) # 1314
     
     def __getitem__(self,idx):
         inp = torch.FloatTensor(self.inp[idx])
         outp = torch.FloatTensor(self.outp[idx])
-        return inp, outp # 해당하는 idx(인덱스)의 input과 output 데이터를 반환한다.
+        return inp, outp # return the according to idx, return the input and output.

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Apr  5 03:56:54 2022
+Created on Tue Apr 5 03:56:54 2022
+@author: ODD_Team
 
-@author: ODD Team
 """
 import torch
 from torchvision import transforms
@@ -10,7 +10,7 @@ from torchvision import transforms
 
 
 ###############################################################################
-# DETR 모델 불러오기
+# DETR 모델 불러오기 import DETR
 class DETR():
     def __init__(self, model_path, backbone):
     # 2. Make COCO dataset
@@ -33,11 +33,11 @@ class DETR():
         ]
         
        
-       # colors for visualization
+       # set colors for visualizations!
        self.COLORS = [[0.000, 0.447, 0.741], [0.850, 0.325, 0.098], [0.929, 0.694, 0.125], 
                        [0,0,1], [0.466, 0.674, 0.188], [0.301, 0.745, 0.933]]
         
-        # 3. Preprocessing and bounding box
+        # 3. Preprocessing & bounding box
         # standard PyTorch mean-std input image normalization
        self.transform = transforms.Compose([
             #transforms.Resize((375, 1242)),
@@ -45,7 +45,7 @@ class DETR():
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ])
        
-       # 모델 불러오기
+       # Import model
        # DETR Resnet50 or DETR Resnet101   
        self.model = torch.hub.load(model_path, backbone, pretrained=True)
        self.model.eval()
@@ -65,7 +65,7 @@ class DETR():
         b = b * torch.tensor([img_w, img_h, img_w, img_h], dtype=torch.float32).to(self.device)
         return b
     
-    # 4. Detection
+    # 4. Detect and return the bounding box
     def detect(self, im):
         # mean-std normalize the input image (batch-size: 1)
         img = self.transform(im).unsqueeze(0).to(self.device)

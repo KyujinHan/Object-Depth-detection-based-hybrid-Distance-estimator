@@ -2,7 +2,9 @@
 """
 Created on Mon May 23 04:55:32 2022
 
-@author: Admin
+@author: ODD_team
+
+It is used zloc model as LSTM, little change, but systemically there is no change with XGboost application model
 """
 
 import os
@@ -105,7 +107,7 @@ ZlocE.model.eval()
 ZlocE.model.to(device)
 
 '''
-사용한 변수
+variable which we used
 : [xmin, ymin, xmax, ymax, width, height, depth_mean_trim, depth_mean, depth_median, Misc, bicycle, car, person, train, truck]
 
 '''
@@ -240,8 +242,11 @@ if cap.isOpened():
             
             '''
             전처리
+            preprocessing
             bbox 비교해서 70% 이상 겹친다면 그 뒤에 있는 영역을 지우고,
+            if our image are overlap over 70% we remove futher object 
             만약 아니라면, 겹친 부분을 제외한 후, 다시 depth를 계산해서 값 출력
+            if not, exclude overlapped and calculate depth again.
             '''
             
             data.index = [i for i in range(len(data))]

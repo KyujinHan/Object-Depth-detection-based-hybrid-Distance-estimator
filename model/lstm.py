@@ -2,20 +2,21 @@
 """
 Created on Mon May 23 04:55:50 2022
 
-@author: Admin
+@author: ODD_team
+@based on LSTM model
 """
 
 import torch
 import torch.nn as nn
 
-
+# z-location estimator
 class Zloc_Estimaotor(nn.Module):
     def __init__(self, input_dim, hidden_dim, layer_dim, output_dim=1):
         super().__init__()
         
         self.rnn = nn.LSTM(input_dim, hidden_dim, layer_dim, batch_first=True, bidirectional=False)
         
-        #Layer
+        #set Layer
         layersize=[294, 146, 72]
         layerlist= []
         n_in=hidden_dim
@@ -36,8 +37,9 @@ class Zloc_Estimaotor(nn.Module):
         output = self.fc(out[:,-1])
         return output
     
-
+#calss of LSTM
 class LSTM():
+    #base-line of zloc model
     def __init__(self, path):
         self.input_dim = 15
         self.hidden_dim = 612
@@ -47,7 +49,7 @@ class LSTM():
         self.model.load_state_dict(torch.load(path))
         self.device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu') # 'cuda'
         
-        
+        # predict the zlocation and return it
     def predict(self, data):
         self.zloc = self.model(data.reshape(-1,1, self.input_dim).to(self.device))
         return self.zloc.cpu()
