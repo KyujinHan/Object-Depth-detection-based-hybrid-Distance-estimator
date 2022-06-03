@@ -40,13 +40,14 @@ def speaking():
 '''
 
 # sound2
-
+'''
 import winsound as sd
 def beepsound():
     fr = 2500
     du = 700
     sd.Beep(fr,du)
-
+'''
+'''
 count = 0
 # 속력 측정
 def speed_estimate(prev,current_v, time):
@@ -78,8 +79,7 @@ def odd_process(zloc, speed):
             
     else:
         pass
-                
-
+'''
                 
 '''
 Model 및 카메라 정의
@@ -233,6 +233,9 @@ if cap.isOpened():
             # 최소 거리 뽑아서 속도 그 차량으로 하기
             end = time.time() # 시간 측정 끝
             vel_time = end - start
+            
+            # Calculate velocity and print warning message if the velocity high or the distance between car very close.
+            '''
             if len(distance) > 0:
             
                 current = min(distance) - 1.5 # 1.3은 차의 전장 거리
@@ -246,7 +249,7 @@ if cap.isOpened():
                 # 업데이트
                 prev = current
                 count += 1
-            
+            '''
             
             cv2.imshow('video1', frame)
             
@@ -256,7 +259,7 @@ if cap.isOpened():
             torch.cuda.empty_cache() # GPU 캐시 데이터 삭제
             
             # 말하기 (Multi-thread 이용)
-            beepsound()
+            #beepsound()
             
         else:
             print("프레임을 받을 수 없습니다.")

@@ -29,12 +29,16 @@ warnings.filterwarnings(action='ignore')
 '''
 function define
 '''
+# This is not use function, yet.
+
 # sound1
+'''
 import pyttsx3 
 s= pyttsx3.init()
 speak = "전방을 주의하세요"
 s.say(speak)
 s.runAndWait()
+'''
 
 # sound2
 '''
@@ -45,6 +49,8 @@ def beepsound():
     sd.Beep(fr,du)
 '''
 
+# Calculate velocity
+'''
 count = 0
 # 속력 측정
 def speed_estimate(prev,current_v, time):
@@ -78,7 +84,7 @@ def odd_process(zloc, speed):
             s.runAndWait()
     else:
         pass
-                
+'''               
 
                 
 '''
@@ -240,6 +246,7 @@ if cap.isOpened():
                 data_list = pd.DataFrame(data=[xmin, ymin, xmax, ymax, width, height, depth_mean_trim, depth_mean, depth_median, classes, rgb]).T
                 data = pd.concat([data, data_list], axis=0)
             
+            
             '''
             전처리
             preprocessing
@@ -368,6 +375,9 @@ if cap.isOpened():
             # 최소 거리 뽑아서 속도 그 차량으로 하기
             end = time.time() # 시간 측정 끝
             vel_time = end - start
+            
+            # Calculate velocity and print warning message if the velocity high or the distance between car very close.
+            '''
             if len(distance) > 0:
             
                 current = min(distance) - 1.5 # 1.3은 차의 전장 거리
@@ -381,7 +391,7 @@ if cap.isOpened():
                 # 업데이트
                 prev = current
                 count += 1
-            
+            '''
                     
             # 인식되는 차로를 1차선으로 제한하기
             cv2.line(frame,  (500,0), (500,1000), (124, 252, 0))
