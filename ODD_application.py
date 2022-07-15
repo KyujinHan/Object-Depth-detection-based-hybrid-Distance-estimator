@@ -24,62 +24,6 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 ############################# Start ###########################
 warnings.filterwarnings(action='ignore')
 
-'''
-function define
-'''
-'''
-# sound1
-import pyttsx3 
-s = pyttsx3.init()
-speak = "전방을 주의하세요"
-
-# Speaking function
-def speaking():
-    s.say(speak)
-    s.runAndWait()
-'''
-
-# sound2
-'''
-import winsound as sd
-def beepsound():
-    fr = 2500
-    du = 700
-    sd.Beep(fr,du)
-'''
-'''
-count = 0
-# 속력 측정
-def speed_estimate(prev,current_v, time):
-    diff = abs(prev-current_v) # 이동거리 m/0.3s
-    # 1 : 1/3600 = 0.3 : x
-    # 1/3600 * (10/3) = x
-    # diff * 0.001 * (0.3/0.00093)
-    
-    #velocity = (diff*3.6)*time # 0.3sec 단위로
-    velocity = (diff/time) * 3.6
-    return float(velocity)
-
-
-def odd_process(zloc, speed):
-    if speed>=80: #여기서 스피드는 속력이 아니라 속도(상대적 속도임)
-        if zloc<50:
-            print('실행 80')
-            beepsound()
-          
-    elif speed>=40:
-        if zloc<15:
-            print('실행 40')            
-            beepsound()
-
-    elif speed>=10:
-        if zloc<7:     
-            print('실행 10')
-            beepsound()
-            
-    else:
-        pass
-'''
                 
 '''
 Model 및 카메라 정의
@@ -222,8 +166,6 @@ if cap.isOpened():
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, data.iloc[k,-1], 2,
                                 lineType=cv2.LINE_AA)
                     
-                    if classes not in ['Misc','person']:
-                        distance.append(preds)
         
                     
             # 인식되는 차로를 1차선으로 제한하기
@@ -234,22 +176,6 @@ if cap.isOpened():
             end = time.time() # 시간 측정 끝
             vel_time = end - start
             
-            # Calculate velocity and print warning message if the velocity high or the distance between car very close.
-            '''
-            if len(distance) > 0:
-            
-                current = min(distance) - 1.5 # 1.3은 차의 전장 거리
-                if count > 0:
-                    speed = speed_estimate(prev, current, vel_time)
-                    speed = round(speed,2)
-                    odd_process(current, speed)
-                    print('Speed:',speed,'\t','distance:', np.round(current,2))
-                
-                
-                # 업데이트
-                prev = current
-                count += 1
-            '''
             
             cv2.imshow('video1', frame)
             
