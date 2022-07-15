@@ -77,7 +77,7 @@ class ODD:
             # data preprocessing
             self.data_preprocessing(depth_map)
             
-            return self.data
+        return self.data
             
             
     #  data preprocessing part.
