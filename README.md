@@ -28,7 +28,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 0.5057 | 0.8420 | 0.9807 |
 | `XGBoost` | 0.2334 | 0.3149 | 0.9867 |  
-| `LSTM` | 0.9027 | 1.7235 | 0.9657 |  
+| `LSTM` | 0.8670 | 1.6475 | 0.9668 |  
   
 - **Test data (# number of Data: 2,703)**  
 
@@ -36,7 +36,7 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 1.3134 | 2.2927 | 0.9492 | |
 | `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGBoost(Best)](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
-| `LSTM` | 1.2200 | 2.2416 | 0.9522 | [LSTM_612](https://drive.google.com/file/d/1q_u3PL0Ms99f5DI_YEGpB55OIItIMJQ-/view?usp=sharing) |
+| `LSTM` | 1.2093 | 2.2062 | 0.9507 | [LSTM_612](https://drive.google.com/file/d/1q_u3PL0Ms99f5DI_YEGpB55OIItIMJQ-/view?usp=sharing) |
 ------------
 
 # Dataset
