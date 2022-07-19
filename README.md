@@ -35,8 +35,8 @@ ODD 설명하는 글 (만들게 된 계기, 기대하는 바 등등)
 | Model | MAE | RMSE | Accuracy | Pre-trained |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 1.3134 | 2.2927 | 0.9492 | |
-| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGBoost(Best)](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
-| `LSTM` | 1.2093 | 2.2062 | 0.9507 | [LSTM_612](https://drive.google.com/file/d/1DqtP08KgLiUrbPnrXuSZFC7Tr55IAHS_/view?usp=sharing) |
+| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGBoost](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
+| `LSTM` | 1.2093 | 2.2062 | 0.9507 | [LSTM_612(Best)](https://drive.google.com/file/d/1DqtP08KgLiUrbPnrXuSZFC7Tr55IAHS_/view?usp=sharing) |
 ------------
 
 # Dataset
