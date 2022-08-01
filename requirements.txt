@@ -1,5 +1,7 @@
 ##############Library##############
 # Our environment
+# There is no need to set up like our environment.
+# But transformers version has to be high. Because, we used the GLP-depth model.
 pandas == 1.4.1
 Numpy == 1.22.3
 opencv-python == 4.5.4.58
