@@ -19,7 +19,7 @@ class Zloc_Estimaotor(nn.Module):
         self.rnn = nn.LSTM(input_dim, hidden_dim, layer_dim, batch_first=True, bidirectional=False)
         
         #set Layer
-        layersize=[294, 146, 72]
+        layersize=[306, 154, 76]
         layerlist= []
         n_in=hidden_dim
         for i in layersize:
