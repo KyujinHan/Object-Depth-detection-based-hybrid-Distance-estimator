@@ -1,10 +1,8 @@
-# -*- coding: utf-8 -*-
 """
-Created on Mon May 23 04:55:32 2022
-
-@author: ODD_team
-
-It is used zloc model as LSTM, little change, but systemically there is no change with XGboost application model
+    @ Author_odd team
+    @ this program is design by ODD_team.
+    @ using open-cv, we will predict distance & and give the warning message.
+    @ If we have the chance imporve it by application, we will use GPS API to estimate accurate system
 """
 
 import os
@@ -26,10 +24,14 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 warnings.filterwarnings(action='ignore')
 
 
+'''
+function define
+'''
                 
 '''
 Model 및 카메라 정의
 '''
+prepare_start = time.time()
 ##############################################################################################################################################
 # 모델 정의
 # DETR 불러오기
@@ -47,7 +49,7 @@ GLPdepth.model.eval()
 GLPdepth.model.to(device)
 
 # Z-location Estimator 불러오기 (LSTM)
-lstm_path = './weights/ODD_LSTM_612_iou4.pth'
+lstm_path = './weights/ODD_LSTM_612_iou4_V2.pth'
 ZlocE = LSTM(lstm_path)
 ZlocE.model.eval()
 ZlocE.model.to(device)
@@ -57,12 +59,6 @@ variable which we used
 : [xmin, ymin, xmax, ymax, width, height, depth_mean_trim, depth_mean, depth_median, Misc, bicycle, car, person, train, truck]
 
 '''
-# Z-location Estimator 불러오기 (LSTM)
-lstm_path = './weights/ODD_LSTM_612_iou4.pth'
-ZlocE = LSTM(lstm_path)
-ZlocE.model.eval()
-ZlocE.model.to(device)
-
 #스케일러 불러오기
 scaler = pickle.load(open('./weights/lstm_scaler.pkl', 'rb'))
 ##############################################################################################################################################
@@ -78,9 +74,12 @@ os.makedirs('./test_video/frame', exist_ok=True)
 #cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1242) # 가로
 #cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 374) # 세로
 
+prepare_end = time.time()
+print(prepare_end - prepare_start) # our time is 8s.
 
 '''
 # 비디오 작동하기
+# per frame: 0.3s
 '''
 currentframe = 1
 if cap.isOpened():
@@ -115,15 +114,21 @@ if cap.isOpened():
             img_shape = color_coverted.shape[0:2]
             
             # Predicted
+            #detr_time = time.time()
             scores, boxes = DETR.detect(pil_image) # Detection
-            
+            #detr_time2 = time.time()
+            #print('DETR')
+            #print(detr_time2 - detr_time)
             
             '''
             Step2) GLP_Depth 적용
             '''
             # Make depth map
+            #glp_time = time.time()
             prediction = GLPdepth.predict(pil_image, img_shape)
-            
+            #glp_time2 = time.time()
+            #print('glp')
+            #print(glp_time2 - glp_time)
             
             '''
             Step3) 입력 및 z-model 적용
@@ -316,6 +321,22 @@ if cap.isOpened():
             end = time.time() # 시간 측정 끝
             vel_time = end - start
             
+            # Calculate velocity and print warning message if the velocity high or the distance between car very close.
+            '''
+            if len(distance) > 0:
+            
+                current = min(distance) - 1.5 # 1.3은 차의 전장 거리
+                if count > 0:
+                    #print(vel_time, current, prev)
+                    speed = speed_estimate(prev, current, vel_time)
+                    speed = round(speed,2)
+                    odd_process(current, speed)
+                    print('Speed:',speed,'\t','distance:', np.round(current,2))
+                
+                # 업데이트
+                prev = current
+                count += 1
+            '''
                     
             # 인식되는 차로를 1차선으로 제한하기
             cv2.line(frame,  (500,0), (500,1000), (124, 252, 0))
@@ -335,7 +356,7 @@ if cap.isOpened():
             break
         
           
-
+        
 else:
     print('파일을 열 수 없습니다')
     #warn1.speak()
