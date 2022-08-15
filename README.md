@@ -92,13 +92,7 @@ XGBoost: ODD_application.py
 [KITTI dataset](http://www.cvlibs.net/datasets/kitti/)  
 
  
- # Citation
- GLP-depth
- ```
- @article{kim2022global,
-  title={Global-Local Path Networks for Monocular Depth Estimation with Vertical CutDepth},
-  author={Kim, Doyeon and Ga, Woonghyun and Ahn, Pyungwhan and Joo, Donggyu and Chun, Sehwan and Kim, Junmo},
-  journal={arXiv preprint arXiv:2201.07436},
-  year={2022}
-}
+# Citation
+```
+ 
 ```
