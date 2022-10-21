@@ -79,6 +79,8 @@ Look at the 'odd' folder, there are so many method, for example, LSTM, RandomFor
 # Testing
 Use the file.
 ```
+# Before implementing file, You need some file below.
+# Model weight(.pth file), scaler file
 LSTM: ODD_application_LSTM.py
 XGBoost: ODD_application.py
 ```
