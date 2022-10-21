@@ -29,11 +29,12 @@ We use our ODD model. Our purpose is that predict the distance between car based
   
 - **Test data (# number of Data: 2,703)**  
 
-| Model | MAE | RMSE | Accuracy | Pre-trained |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| `RandomForest` | 1.3134 | 2.2927 | 0.9492 | |
-| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGBoost](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
-| `LSTM` | 1.1658 | 2.1420 | 0.9526 | [LSTM_612 // not update](https://drive.google.com/file/d/1DqtP08KgLiUrbPnrXuSZFC7Tr55IAHS_/view?usp=sharing) |
+| Model | MAE | RMSE | Accuracy | Pre-trained | scaler file |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| `RandomForest` | 1.3134 | 2.2927 | 0.9492 | | |
+| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGBoost](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) | (will update) |
+| `LSTM` | 1.1658 | 2.1420 | 0.9526 | [LSTM_612 // not update](https://drive.google.com/file/d/1DqtP08KgLiUrbPnrXuSZFC7Tr55IAHS_/view?usp=sharing) | (will update) |  
+
 ------------
 
 # Dataset
