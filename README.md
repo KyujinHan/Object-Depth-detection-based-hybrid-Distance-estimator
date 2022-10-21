@@ -25,7 +25,7 @@ We use our ODD model. Our purpose is that predict the distance between car based
 | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 0.5057 | 0.8420 | 0.9807 |
 | `XGBoost` | 0.2334 | 0.3149 | 0.9867 |  
-| `LSTM` | 0.8670 | 1.6475 | 0.9668 |  
+| `LSTM` | 0.6988 | 1.4736 | 0.9746 |  
   
 - **Test data (# number of Data: 2,703)**  
 
@@ -33,7 +33,7 @@ We use our ODD model. Our purpose is that predict the distance between car based
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 1.3134 | 2.2927 | 0.9492 | |
 | `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGBoost](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) |
-| `LSTM` | 1.2093 | 2.2062 | 0.9507 | [LSTM_612](https://drive.google.com/file/d/1DqtP08KgLiUrbPnrXuSZFC7Tr55IAHS_/view?usp=sharing) |
+| `LSTM` | 1.1658 | 2.1420 | 0.9526 | [LSTM_612](https://drive.google.com/file/d/1DqtP08KgLiUrbPnrXuSZFC7Tr55IAHS_/view?usp=sharing) |
 ------------
 
 # Dataset
