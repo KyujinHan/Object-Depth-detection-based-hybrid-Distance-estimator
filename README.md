@@ -3,6 +3,7 @@ We use our VDE(ODD) model. Our purpose is that predict the distance between car 
 >(before name)
 >Object-Depth-detection-based-hybrid-Distance-estimator (Called, ODD)
 We will more update the github readme.
+> Paper is not public yet. Wait a month(?)
 
 
 # Introduction
