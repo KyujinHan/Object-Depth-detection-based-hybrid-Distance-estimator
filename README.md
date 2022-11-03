@@ -36,7 +36,7 @@ We will more update the github readme.
 
 ------------
 
-** More detail performace, you can find our [paper](). **
+**More detail performace, you can find our [paper]().**
 
 # Dataset
 1) Download Dataset
