@@ -65,12 +65,14 @@ data
 3) Make Our Datasets   
 We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR. Apply the code below in order.  
 ```
+# You must check the file name.
 1) kitti_detr_dataset_iou.py
 2) kitti_glpdepth_dataset_iou.py
 ```
  
 4) Split data
 ```
+# You must check the file name.
 './datasets/train_test_split.py'
 ```
   
@@ -82,6 +84,7 @@ Use the file.
 ```
 # Before, implementing file, you need some file below.
 # :> Model weight(.pth file), scaler file
+# You can download in 'Performace block'.
 
 # And, implementing this file.
 LSTM: ODD_application_LSTM.py
