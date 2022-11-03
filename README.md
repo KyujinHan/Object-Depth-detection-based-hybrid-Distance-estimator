@@ -40,7 +40,7 @@ We will more update the github readme.
 
 # Dataset
 1) Download Dataset
-You can download the [KITTI Data(11.5GB)](https://drive.google.com/file/d/1MhDts48HWxIWPC7ZXLOMPqU2Mnt3NVmI/view?usp=sharing).  
+You can download the [KITTI Data](https://drive.google.com/file/d/1MhDts48HWxIWPC7ZXLOMPqU2Mnt3NVmI/view?usp=sharing).  
 Then, You unzip the data, and set the path.   
 ```
 os.makedirs('./data/', exist_ok=True)  
