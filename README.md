@@ -15,7 +15,7 @@ We will update the github readme.
 > Now, we also called 'VDE'.
 
 # Model Process
-![ODD_process](https://user-images.githubusercontent.com/98331298/171548443-b4441f3e-7ac0-4108-913d-bd4e9db84fe3.jpg)   
+![odd_framework](https://user-images.githubusercontent.com/98331298/199839808-ec393b0d-ffce-4dc3-8ce1-d9c2f07b64c6.png)
   
 # Performance
 **We use [KITTI](http://www.cvlibs.net/datasets/kitti/) datasets. But we did not use the original data, We reconstructed the data to suit our purpose.**
