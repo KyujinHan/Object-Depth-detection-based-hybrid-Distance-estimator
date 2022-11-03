@@ -1,4 +1,4 @@
-# Vehicle Distance Estimation from a Monocular Camera for Advanced Driver Assistance Systems
+# [Vehicle Distance Estimation from a Monocular Camera for Advanced Driver Assistance Systems]()
 We use our ODD model. Our purpose is that predict the distance between car based on Deep-Learning.  
 >(before name)
 >Object-Depth-detection-based-hybrid-Distance-estimator  
@@ -15,7 +15,7 @@ We will update the github readme.
 > Now, we also called 'VDE'.  
   
 # Performance
-**We use [KITTI](http://www.cvlibs.net/datasets/kitti/) datasets. But we did not use the original data, We reconstructed the data to suit our purpose.**
+**We use [KITTI](http://www.cvlibs.net/datasets/kitti/) datasets. But we did not use the original data, We reconstructed the data to suit our purpose.**  
 
 ------------
 - **Train data (# number of Data: 21,616)**  
@@ -35,6 +35,8 @@ We will update the github readme.
 | `LSTM` | 1.1658 | 2.1420 | 0.9526 | [LSTM_612 // not update](https://drive.google.com/file/d/1DqtP08KgLiUrbPnrXuSZFC7Tr55IAHS_/view?usp=sharing) | (will update) |  
 
 ------------
+
+** More detail performace, you can find our [paper](). **
 
 # Dataset
 1) Download Dataset
@@ -95,5 +97,5 @@ XGBoost: ODD_application.py
  
 # Citation
 ```
- 
+we will make it.
 ```
