@@ -65,15 +65,15 @@ data
 3) Make Our Datasets   
 We reconstructed data, because our final model, ZLE, use depth value of GLP-depth and bounding box of DETR. Apply the code below in order.  
 ```
-# You must check the file name.
 1) kitti_detr_dataset_iou.py
 2) kitti_glpdepth_dataset_iou.py
+# You must check the saving file name.
 ```
  
 4) Split data
 ```
-# You must check the file name.
 './datasets/train_test_split.py'
+# You must check the saving file name.
 ```
   
 # Training 
