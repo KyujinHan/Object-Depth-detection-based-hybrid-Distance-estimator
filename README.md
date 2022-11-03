@@ -1,14 +1,15 @@
 # [Vehicle Distance Estimation from a Monocular Camera for Advanced Driver Assistance Systems]()
 We use our VDE(ODD) model. Our purpose is that predict the distance between car based on Deep-Learning.  
 >(before name)
->Object-Depth-detection-based-hybrid-Distance-estimator (Called, ODD)
-We will more update the github readme.
-> (11/04) Paper is not public yet. Wait a month(?)
+>Object-Depth-detection-based-hybrid-Distance-estimator (Called, ODD)  
+>We will more update the github readme.  
+>(11/04) Paper is not public yet. Wait a month(?)  
 
 
 # Introduction
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/98331298/171547569-da221132-a13e-4b5f-8437-59cad290d3b2.gif)  
 >Bounding box and Depth are extracted from image data to predict the distance.    
+>
     
   
 # Model Process
@@ -100,6 +101,10 @@ XGBoost: ODD_application.py
 
  
 # Citation
+```
+Thank you so much for your interest in our model.
+```
+
 ```
 we will make it.
 ```
