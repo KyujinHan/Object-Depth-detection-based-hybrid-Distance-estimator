@@ -10,12 +10,9 @@ We will update the github readme.
 >Bounding box and Depth are extracted from image data to predict the distance.    
     
   
-# Model Architecture
-<img width="620" alt="architecture" src="https://user-images.githubusercontent.com/98331298/171553688-aee2e42a-9699-485a-8257-24f32b100ebe.png">
-> Now, we also called 'VDE'.
-
 # Model Process
 ![odd_framework](https://user-images.githubusercontent.com/98331298/199839808-ec393b0d-ffce-4dc3-8ce1-d9c2f07b64c6.png)
+> Now, we also called 'VDE'.  
   
 # Performance
 **We use [KITTI](http://www.cvlibs.net/datasets/kitti/) datasets. But we did not use the original data, We reconstructed the data to suit our purpose.**
