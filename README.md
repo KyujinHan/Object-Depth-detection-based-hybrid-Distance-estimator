@@ -37,7 +37,7 @@ We use our VDE(ODD) model. Our purpose is that predict the distance between car 
 
 ------------
 
-**More detail performace, you can find our [paper]().**
+**More detail performace, you can find our [paper](https://www.mdpi.com/2073-8994/14/12/2657).**
 
 # Dataset
 1) Download Dataset
