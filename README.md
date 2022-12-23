@@ -1,4 +1,4 @@
-# [Vehicle Distance Estimation from a Monocular Camera for Advanced Driver Assistance Systems](https://www.mdpi.com/2073-8994/14/12/2657)
+# [VDE: Vehicle Distance Estimation from a Monocular Camera for Advanced Driver Assistance Systems](https://www.mdpi.com/2073-8994/14/12/2657)
 We use our VDE(ODD) model. Our purpose is that predict the distance between car based on Deep-Learning.  
 >(before name)
 >[Object-Depth-detection-based-hybrid-Distance-estimator (Called, ODD // Download Link)](https://www.mdpi.com/2073-8994/14/12/2657/pdf)  
