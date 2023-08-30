@@ -32,8 +32,8 @@ We use our VDE(ODD) model. Our purpose is that predict the distance between car 
 | Model | MAE | RMSE | Accuracy | Pre-trained | scaler file |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | `RandomForest` | 1.3134 | 2.2927 | 0.9492 | | |
-| `XGBoost` | 1.2194 | 2.1536 | 0.9522 | [XGBoost // not update yet](https://drive.google.com/file/d/1YPiHMNylDWM2s_Q1_20BEnDYUcNgSu8H/view?usp=sharing) | (will update) |
-| `LSTM` | 1.1658 | 2.1420 | 0.9526 | [LSTM_612 // not update yet](https://drive.google.com/file/d/1DqtP08KgLiUrbPnrXuSZFC7Tr55IAHS_/view?usp=sharing) | (will update) |  
+| `XGBoost` | 1.2194 | 2.1536 | 0.9522 |  |  |
+| `LSTM` | 1.1658 | 2.1420 | 0.9526 | [LSTM_16](https://drive.google.com/drive/folders/1k2oHe3M1pkW2KoFDcU1JidrYFyTvXrOd?usp=sharing) | [scaler](https://drive.google.com/drive/folders/1k2oHe3M1pkW2KoFDcU1JidrYFyTvXrOd?usp=sharing) |  
 
 ------------
 
@@ -78,6 +78,12 @@ We reconstructed data, because our final model, ZLE, use depth value of GLP-dept
 ```
   
 # Training 
+You set folder like below.  
+```
+weights
+├── ODD_variable16.pth               
+└── lstm_scaler.pth               
+```  
 Look at the 'odd' folder, there are so many method, for example, LSTM, RandomForest, XGBoost.
 
 # Testing
