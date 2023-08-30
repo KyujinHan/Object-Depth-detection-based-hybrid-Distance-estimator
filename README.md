@@ -78,16 +78,15 @@ We reconstructed data, because our final model, ZLE, use depth value of GLP-dept
 ```
   
 # Training 
-You set folder like below.  
-```
-weights
-├── ODD_variable16.pth               
-└── lstm_scaler.pth               
-```  
 Look at the 'odd' folder, there are so many method, for example, LSTM, RandomForest, XGBoost.
 
 # Testing
 Use the file.
+```
+weights
+├── ODD_variable16.pth               
+└── lstm_scaler.pth               
+```    
 ```
 # Before, implementing file, you need some file below.
 # :> Model weight(.pth file), scaler file
