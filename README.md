@@ -40,8 +40,10 @@ We use our VDE(ODD) model. Our purpose is that predict the distance between car 
 **More detail performace, you can find our [paper](https://www.mdpi.com/2073-8994/14/12/2657).**
 
 # Dataset
+>Quick download about [preprocessing_dataset](https://drive.google.com/drive/folders/1yl_XOZKX9VMDtaF10zItw8uoZY0NNGcx?usp=sharing).  
+
 1) Download Dataset
-You can download the [KITTI Data](https://drive.google.com/file/d/1MhDts48HWxIWPC7ZXLOMPqU2Mnt3NVmI/view?usp=sharing).  
+You can download the [KITTI Data](http://www.cvlibs.net/datasets/kitti/).  
 Then, You unzip the data, and set the path.   
 ```
 os.makedirs('./data/', exist_ok=True)  
